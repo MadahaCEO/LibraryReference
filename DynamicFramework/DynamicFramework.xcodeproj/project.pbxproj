@@ -8,12 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		18D3D86521C7CE670095767E /* DynamicFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 18D3D86321C7CE670095767E /* DynamicFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		18D3D8B521CBB9C40095767E /* DFTest.h in Headers */ = {isa = PBXBuildFile; fileRef = 18D3D8B321CBB9C40095767E /* DFTest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		18D3D8B621CBB9C40095767E /* DFTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D3D8B421CBB9C40095767E /* DFTest.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		18D3D86021C7CE670095767E /* DynamicFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DynamicFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		18D3D86321C7CE670095767E /* DynamicFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DynamicFramework.h; sourceTree = "<group>"; };
 		18D3D86421C7CE670095767E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18D3D8B321CBB9C40095767E /* DFTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DFTest.h; sourceTree = "<group>"; };
+		18D3D8B421CBB9C40095767E /* DFTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DFTest.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +51,8 @@
 			isa = PBXGroup;
 			children = (
 				18D3D86321C7CE670095767E /* DynamicFramework.h */,
+				18D3D8B321CBB9C40095767E /* DFTest.h */,
+				18D3D8B421CBB9C40095767E /* DFTest.m */,
 				18D3D86421C7CE670095767E /* Info.plist */,
 			);
 			path = DynamicFramework;
@@ -59,6 +65,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18D3D8B521CBB9C40095767E /* DFTest.h in Headers */,
 				18D3D86521C7CE670095767E /* DynamicFramework.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -74,6 +81,7 @@
 				18D3D85C21C7CE670095767E /* Frameworks */,
 				18D3D85D21C7CE670095767E /* Headers */,
 				18D3D85E21C7CE670095767E /* Resources */,
+				18D3D88121CA6EFF0095767E /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -126,11 +134,28 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		18D3D88121CA6EFF0095767E /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "cd \"${CONFIGURATION_BUILD_DIR}\"\n\ncp -r \"${PROJECT_NAME}.framework\" \"${PROJECT_DIR}/../Libs/\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		18D3D85B21C7CE670095767E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18D3D8B621CBB9C40095767E /* DFTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

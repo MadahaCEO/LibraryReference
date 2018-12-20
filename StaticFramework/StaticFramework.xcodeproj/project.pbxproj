@@ -8,12 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		18D3D85021C7CDE10095767E /* StaticFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 18D3D84E21C7CDE10095767E /* StaticFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		18D3D8B121CBB9AB0095767E /* SFTest.h in Headers */ = {isa = PBXBuildFile; fileRef = 18D3D8AF21CBB9AB0095767E /* SFTest.h */; };
+		18D3D8B221CBB9AB0095767E /* SFTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D3D8B021CBB9AB0095767E /* SFTest.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		18D3D84B21C7CDE10095767E /* StaticFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = StaticFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		18D3D84E21C7CDE10095767E /* StaticFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StaticFramework.h; sourceTree = "<group>"; };
 		18D3D84F21C7CDE10095767E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18D3D8AF21CBB9AB0095767E /* SFTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SFTest.h; sourceTree = "<group>"; };
+		18D3D8B021CBB9AB0095767E /* SFTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SFTest.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +51,8 @@
 			isa = PBXGroup;
 			children = (
 				18D3D84E21C7CDE10095767E /* StaticFramework.h */,
+				18D3D8AF21CBB9AB0095767E /* SFTest.h */,
+				18D3D8B021CBB9AB0095767E /* SFTest.m */,
 				18D3D84F21C7CDE10095767E /* Info.plist */,
 			);
 			path = StaticFramework;
@@ -60,6 +66,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				18D3D85021C7CDE10095767E /* StaticFramework.h in Headers */,
+				18D3D8B121CBB9AB0095767E /* SFTest.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +81,7 @@
 				18D3D84721C7CDE10095767E /* Frameworks */,
 				18D3D84821C7CDE10095767E /* Headers */,
 				18D3D84921C7CDE10095767E /* Resources */,
+				18D3D88221CA6F0A0095767E /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -126,11 +134,28 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		18D3D88221CA6F0A0095767E /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "cd \"${CONFIGURATION_BUILD_DIR}\"\n\ncp -r \"${PROJECT_NAME}.framework\" \"${PROJECT_DIR}/../Libs/\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		18D3D84621C7CDE10095767E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18D3D8B221CBB9AB0095767E /* SFTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

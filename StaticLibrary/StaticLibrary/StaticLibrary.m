@@ -10,4 +10,14 @@
 
 @implementation StaticLibrary
 
++ (void)test {
+    
+    NSLog(@"========动态库.a");
+    
+}
+
+
+
+
+
 @end

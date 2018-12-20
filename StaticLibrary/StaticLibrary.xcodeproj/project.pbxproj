@@ -76,6 +76,7 @@
 				18D3D87021C7CE980095767E /* Sources */,
 				18D3D87121C7CE980095767E /* Frameworks */,
 				18D3D87221C7CE980095767E /* CopyFiles */,
+				18D3D88021CA6EF50095767E /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -117,6 +118,22 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		18D3D88021CA6EF50095767E /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "cd \"${CONFIGURATION_BUILD_DIR}\"\n\ncp -r \"${PROJECT_NAME}.framework\" \"${PROJECT_DIR}/../../Frameworks/\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		18D3D87021C7CE980095767E /* Sources */ = {
