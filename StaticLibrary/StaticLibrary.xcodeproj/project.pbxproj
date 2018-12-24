@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		18D3D87921C7CE980095767E /* StaticLibrary.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D3D87821C7CE980095767E /* StaticLibrary.m */; };
 		18D3D87A21C7CE980095767E /* StaticLibrary.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 18D3D87721C7CE980095767E /* StaticLibrary.h */; };
+		18D3D8B921D1038D0095767E /* SLTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D3D8B821D1038D0095767E /* SLTest.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,6 +29,8 @@
 		18D3D87421C7CE980095767E /* libStaticLibrary.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libStaticLibrary.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		18D3D87721C7CE980095767E /* StaticLibrary.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StaticLibrary.h; sourceTree = "<group>"; };
 		18D3D87821C7CE980095767E /* StaticLibrary.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StaticLibrary.m; sourceTree = "<group>"; };
+		18D3D8B721D1038D0095767E /* SLTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SLTest.h; sourceTree = "<group>"; };
+		18D3D8B821D1038D0095767E /* SLTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SLTest.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +65,8 @@
 			children = (
 				18D3D87721C7CE980095767E /* StaticLibrary.h */,
 				18D3D87821C7CE980095767E /* StaticLibrary.m */,
+				18D3D8B721D1038D0095767E /* SLTest.h */,
+				18D3D8B821D1038D0095767E /* SLTest.m */,
 			);
 			path = StaticLibrary;
 			sourceTree = "<group>";
@@ -131,7 +136,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "cd \"${CONFIGURATION_BUILD_DIR}\"\n\ncp -r \"${PROJECT_NAME}.framework\" \"${PROJECT_DIR}/../../Frameworks/\"\n";
+			shellScript = "cd \"${CONFIGURATION_BUILD_DIR}\"\n\ncp -r \"${FULL_PRODUCT_NAME}\" \"${PROJECT_DIR}/../LibraryReference/StaticLibs/\"\ncp -r \"include/StaticLibrary/StaticLibrary.h\" \"${PROJECT_DIR}/../LibraryReference/StaticLibs/\"\n\n#cp -r \"${HEADER_SEARCH_PATHS}/${PROJECT_NAME}/${PROJECT_NAME}.h\" \"${PROJECT_DIR}/../LibraryReference/StaticLibs/\"\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -140,6 +145,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18D3D8B921D1038D0095767E /* SLTest.m in Sources */,
 				18D3D87921C7CE980095767E /* StaticLibrary.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

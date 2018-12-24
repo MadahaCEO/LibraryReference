@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		18D3D85021C7CDE10095767E /* StaticFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 18D3D84E21C7CDE10095767E /* StaticFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		18D3D8B121CBB9AB0095767E /* SFTest.h in Headers */ = {isa = PBXBuildFile; fileRef = 18D3D8AF21CBB9AB0095767E /* SFTest.h */; };
+		18D3D8B121CBB9AB0095767E /* SFTest.h in Headers */ = {isa = PBXBuildFile; fileRef = 18D3D8AF21CBB9AB0095767E /* SFTest.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		18D3D8B221CBB9AB0095767E /* SFTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D3D8B021CBB9AB0095767E /* SFTest.m */; };
 /* End PBXBuildFile section */
 

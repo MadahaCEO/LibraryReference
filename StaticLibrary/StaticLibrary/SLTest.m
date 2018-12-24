@@ -1,23 +1,20 @@
 //
-//  StaticLibrary.m
+//  SLTest.m
 //  StaticLibrary
 //
-//  Created by Apple on 2018/12/17.
+//  Created by Apple on 2018/12/24.
 //  Copyright © 2018 马大哈. All rights reserved.
 //
 
-#import "StaticLibrary.h"
 #import "SLTest.h"
 
-@implementation StaticLibrary
-
+@implementation SLTest
 
 
 + (void)test {
     
-    [SLTest test];
+    NSLog(@"========静态库.a");
     
 }
-
 
 @end

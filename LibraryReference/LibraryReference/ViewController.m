@@ -8,7 +8,8 @@
 
 #import "ViewController.h"
 #import <DynamicFramework/DFTest.h>
-
+#import <StaticFramework/StaticFramework.h>
+#import "StaticLibrary.h"
 
 @interface ViewController ()
 
@@ -20,8 +21,11 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-    
     [DFTest test];
+    
+    [SFTest test];
+    
+    [StaticLibrary test];
 
 }
 

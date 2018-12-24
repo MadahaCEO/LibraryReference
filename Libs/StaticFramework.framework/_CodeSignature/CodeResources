@@ -4,9 +4,13 @@
 <dict>
 	<key>files</key>
 	<dict>
+		<key>Headers/SFTest.h</key>
+		<data>
+		UXZ/4ZQdq/uRYGX7BwFyOsxaZAE=
+		</data>
 		<key>Headers/StaticFramework.h</key>
 		<data>
-		QS1T4gnD/m+m5D9zeOS1FVEjZEU=
+		77nGtvt4j4GqyznAolLuDBdnz1A=
 		</data>
 		<key>Info.plist</key>
 		<data>
@@ -19,11 +23,18 @@
 	</dict>
 	<key>files2</key>
 	<dict>
+		<key>Headers/SFTest.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			MAa+cCNm7IGPiNOSVxi9jVR2ugMFckAiqJJPIEGMJ7g=
+			</data>
+		</dict>
 		<key>Headers/StaticFramework.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			x2PXWemSiBYjm113RqWD0n2zFtATBLqi4wl/vgH3Ah8=
+			hbO66ErxPppJ5xMP0k0alxqC98cQH86RWxcab2Si3xc=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

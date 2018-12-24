@@ -17,6 +17,7 @@
 		18D3D8AA21CBB95B0095767E /* StaticFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18D3D8A821CBB95B0095767E /* StaticFramework.framework */; };
 		18D3D8AC21CBB9610095767E /* DynamicFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 18D3D8A721CBB95B0095767E /* DynamicFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		18D3D8AE21CBB9610095767E /* StaticFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 18D3D8A821CBB95B0095767E /* StaticFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		18D3D8BD21D1077E0095767E /* libStaticLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 18D3D8BC21D1077E0095767E /* libStaticLibrary.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -47,6 +48,8 @@
 		18D3D83A21C7CD880095767E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		18D3D8A721CBB95B0095767E /* DynamicFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DynamicFramework.framework; path = ../Libs/DynamicFramework.framework; sourceTree = "<group>"; };
 		18D3D8A821CBB95B0095767E /* StaticFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StaticFramework.framework; path = ../Libs/StaticFramework.framework; sourceTree = "<group>"; };
+		18D3D8BB21D1077E0095767E /* StaticLibrary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StaticLibrary.h; sourceTree = "<group>"; };
+		18D3D8BC21D1077E0095767E /* libStaticLibrary.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libStaticLibrary.a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +59,7 @@
 			files = (
 				18D3D8A921CBB95B0095767E /* DynamicFramework.framework in Frameworks */,
 				18D3D8AA21CBB95B0095767E /* StaticFramework.framework in Frameworks */,
+				18D3D8BD21D1077E0095767E /* libStaticLibrary.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +69,7 @@
 		18D3D81F21C7CD880095767E = {
 			isa = PBXGroup;
 			children = (
+				18D3D8BA21D106100095767E /* StaticLibs */,
 				18D3D82A21C7CD880095767E /* LibraryReference */,
 				18D3D82921C7CD880095767E /* Products */,
 				18D3D88A21CA74190095767E /* Frameworks */,
@@ -102,6 +107,15 @@
 				18D3D8A821CBB95B0095767E /* StaticFramework.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		18D3D8BA21D106100095767E /* StaticLibs */ = {
+			isa = PBXGroup;
+			children = (
+				18D3D8BC21D1077E0095767E /* libStaticLibrary.a */,
+				18D3D8BB21D1077E0095767E /* StaticLibrary.h */,
+			);
+			path = StaticLibs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -315,8 +329,13 @@
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = ../Libs;
+				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = LibraryReference/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					../LibraryReference/StaticLibs,
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.madaha.LibraryReference;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -331,8 +350,13 @@
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = ../Libs;
+				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = LibraryReference/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					../LibraryReference/StaticLibs,
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.madaha.LibraryReference;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
